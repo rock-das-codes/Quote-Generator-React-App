@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-* {
+@import "tailwindcss";
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,11 +13,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
+  height: 100vh;
   overflow: hidden;
   transition: background-image 0.5s ease-in-out;
 }
-
+/* 
 .heading{
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
@@ -65,6 +65,16 @@ span{
   }
 }
 
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0deg);
+    
+  }
+  100% {
+    transform: rotate(360deg)
+  
+  }
+}
 .author h5 {
   font-family: 'Dancing Script', cursive;
   margin: 1em 0;
@@ -72,20 +82,36 @@ span{
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 0 0 8px #C4A69D,
-                0 0 8px #C4A69D;
-}
+  text-transform: uppercase; */ 
+  /* text-shadow: 0 0 8px #C4A69D,
+                /* 0 0 8px #C4A69D; */
 
-.button-container {
+
+/* .button-container {
   margin-top: 15px;
   display: flex;
   justify-content: center;
   gap: 20px;
   transition: opacity 0.3s ease-in-out;
+} */
+/* .loading{
+  color:white;
+  font-size: large;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+.spinner{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: transparent;
+  /* border: 6px solid #f3f3f3; */
+  /* border-top: 6px solid #3498db;
+  animation: spinAnimation 1s linear  infinite;
+} */ */
 
-button {
+/* button {
   cursor: pointer;
   font-size: 1.2rem;
   height: 2.5rem;
@@ -101,16 +127,19 @@ button {
 
 button:hover {
   filter: brightness(110%);
+} */
+/* .favourite{
+  padding-top:10px;
+  
 }
-
 button:focus {
   filter: brightness(120%);
-}
+} */
 
-button:active {
+/* button:active {
   transform: scale(0.95);
-}
-footer{
+} */
+/* footer{
   margin:50px;
 }
 footer > a{
@@ -121,4 +150,4 @@ footer > a{
   padding-left: 30%;
   transition: all .5s ease-out;
   color:white;
-}
+} */ */
