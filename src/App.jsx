@@ -4,7 +4,7 @@ import { useMemo } from "react";
 
 const App = () => {
   const [selectTag, setSelectTag] = useState("Love");
-  const url = `https://fluffy-journey-5p6q7x54jp5f4rg-5000.app.github.dev//api/quote${selectTag ? `?tag=${encodeURIComponent(selectTag)}` : ""}`;
+  const url = `https://quote-generator-react-app.onrender.com/api/quote${selectTag ? `?tag=${encodeURIComponent(selectTag)}` : ""}`;
   const [quotes, setQuotes] = useState(null);
   const [fav, setFav] = useState(false);
   const [tags, setTags] = useState([]);
@@ -42,7 +42,7 @@ const App = () => {
   useEffect(() => {
     getQuote();
     try {
-      fetch("https://fluffy-journey-5p6q7x54jp5f4rg-5000.app.github.dev//api/tags")
+      fetch("https://quote-generator-react-app.onrender.com/api/tags")
         .then((response) => response.json())
         .then((data) => { setTags(data); });
     } catch (error) {
