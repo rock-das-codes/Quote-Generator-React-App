@@ -2,7 +2,7 @@ flask
 flask_cors
 gunicorn
 requests
-ssl
+
 # Note: The 'ssl' module is part of the Python standard library and does not need to be installed separately.
 # The 'gunicorn' server is used to run the Flask application in production.
 # The 'flask_cors' package is used to handle Cross-Origin Resource Sharing (CORS) in Flask applications.
