@@ -4,7 +4,7 @@ import { useMemo } from "react";
 
 const App = () => {
   const [selectTag, setSelectTag] = useState("Love");
-  const url = `https://api.quotable.io/quotes?tags=${selectTag}&limit=50`;
+  const url = `https://fluffy-journey-5p6q7x54jp5f4rg-5000.app.github.dev//api/quote${selectTag ? `?tag=${encodeURIComponent(selectTag)}` : ""}`;
   const [quotes, setQuotes] = useState(null);
   const [fav, setFav] = useState(false);
   const [tags, setTags] = useState([]);
@@ -23,7 +23,17 @@ const App = () => {
     try {
       fetch(url)
         .then((response) => response.json())
-        .then((data) => {setQuotes(data.results[Math.floor(Math.random() * data.results.length)]);});
+        .then((data) => {
+          // If backend returns .results (for tag), pick random from results
+          if (data.results && Array.isArray(data.results) && data.results.length > 0) {
+            setQuotes(data.results[Math.floor(Math.random() * data.results.length)]);
+          } else if (data.content) {
+            // If backend returns a single quote object
+            setQuotes(data);
+          } else {
+            setQuotes(null);
+          }
+        });
     } catch (error) {
       console.log(error);
     }
@@ -32,9 +42,9 @@ const App = () => {
   useEffect(() => {
     getQuote();
     try {
-      fetch("https://api.quotable.io/tags")
-      .then((response => response.json()))
-      .then((data) => {setTags(data);});
+      fetch("https://fluffy-journey-5p6q7x54jp5f4rg-5000.app.github.dev//api/tags")
+        .then((response) => response.json())
+        .then((data) => { setTags(data); });
     } catch (error) {
       console.log(error);
     }
