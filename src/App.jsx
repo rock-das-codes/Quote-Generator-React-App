@@ -106,8 +106,7 @@ const App = () => {
             className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-5 py-2 rounded-lg shadow hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-all duration-200 font-semibold"
             onClick={shareOnTwitter}
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04A4.28 4.28 0 0 0 16.11 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.11.99A12.13 12.13 0 0 1 3.15 5.13a4.28 4.28 0 0 0 1.33 5.72c-.7-.02-1.36-.21-1.94-.53v.05c0 2.1 1.5 3.85 3.5 4.25-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.16 2.97 4.07 3a8.6 8.6 0 0 1-5.32 1.84c-.34 0-.67-.02-1-.06A12.13 12.13 0 0 0 8.29 21c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.7 8.7 0 0 0 24 4.59a8.47 8.47 0 0 1-2.54.7z"/></svg>
-            Share on X
+           
           </button>
           <button
             onClick={getQuote}
@@ -125,7 +124,7 @@ const App = () => {
         </div>
         <footer className="w-full mt-8 flex justify-center">
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/rock-das-codes?tab=repositories"
             className="no-underline text-base text-white opacity-90 hover:opacity-100 transition-all duration-300"
             target="_blank" rel="noopener noreferrer"
           >
