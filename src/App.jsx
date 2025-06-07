@@ -128,7 +128,7 @@ const App = () => {
             className="no-underline text-base text-white opacity-90 hover:opacity-100 transition-all duration-300"
             target="_blank" rel="noopener noreferrer"
           >
-            &copy; 2023 SPR Hackz
+            &copy; 2025 das
           </a>
         </footer>
       </div>
