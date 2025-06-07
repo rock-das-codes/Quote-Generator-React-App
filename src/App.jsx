@@ -106,7 +106,7 @@ const App = () => {
             className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-5 py-2 rounded-lg shadow hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-all duration-200 font-semibold"
             onClick={shareOnTwitter}
           >
-           
+           Share on X
           </button>
           <button
             onClick={getQuote}
