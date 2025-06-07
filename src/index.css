@@ -2,20 +2,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-
-  background-image: radial-gradient(circle, #051937, #091c33, #0f1e2f, #15202b, #1b2127);
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  transition: background-image 0.5s ease-in-out;
-}
